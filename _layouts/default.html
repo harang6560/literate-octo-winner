@@ -1,0 +1,9 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script>
+      var redirection_url = "{{ site.redirection_url }}" + location.pathname + "?proxyReferer=" + document.referrer + location.search.replace(/^\?/, '&');
+      window.location.replace(redirection_url);
+    </script>
+  </head>
+</html>
